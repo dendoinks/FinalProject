@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:orientation="vertical"
+android:background="@drawable/home_bg"
+android:paddingLeft="10dp"
+android:paddingTop="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <TextView
+            android:id="@+id/user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.03"
+            android:text="loremipsum"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.03"
+            android:text="Welcome back"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_logout_24"
+        app:backgroundTint="@color/app_theme_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#009dff" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_card"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="10dp"
+    android:padding="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.035"
+        android:text="Start learning\n Java!"
+        android:textColor="#305F72"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/card_buttton_bg"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Available \n Courses"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/button_arrow"
+            android:layout_marginLeft="15dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Courses in progress"
+    android:textStyle="bold"
+    android:textSize="23dp"
+    android:textColor="#305F72"
+    android:letterSpacing="0.02"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="13dp"/>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="#FAE4F4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/beginner"/>
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beginner\nCourses"
+                android:layout_toRightOf="@id/i1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#305F72"
+                android:letterSpacing="0.03"
+                android:layout_marginLeft="25dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 hours, 16 lessons"
+                android:layout_toRightOf="@id/i1"
+                android:layout_below="@id/t1"
+                android:textSize="14dp"
+                android:textColor="#F18C8E"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"/>
+
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#305F72"
+                android:layout_toRightOf="@id/t1"
+                android:paddingLeft="50dp"
+                android:paddingTop="25dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_button"
+                android:layout_toRightOf="@id/p1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/c1"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="#FFF5E5"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/sketck_icon"/>
+
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate\nCourses"
+                android:layout_toRightOf="@id/i2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#305F72"
+                android:letterSpacing="0.03"
+                android:layout_marginLeft="25dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 hours, 5 lessons"
+                android:layout_toRightOf="@id/i2"
+                android:layout_below="@id/t2"
+                android:textSize="14dp"
+                android:textColor="#F18C8E"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"/>
+
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#305F72"
+                android:layout_toRightOf="@id/t2"
+                android:paddingLeft="50dp"
+                android:paddingTop="25dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_button"
+                android:layout_toRightOf="@id/p2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
+
+
