@@ -25,6 +25,15 @@
         <item name="cornerSizeBottomLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
-    
+
     <style name="Theme.FinalProject" parent="Base.Theme.FinalProject" />
+
+    <style name="Theme.FinalProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FinalProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FinalProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -9,6 +9,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,9 @@ FirebaseAuth auth;
 FloatingActionButton fab;
 TextView textView;
 FirebaseUser user;
+RelativeLayout beginner, intermediate;
+
+LinearLayout courses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,9 @@ FirebaseUser user;
         fab = findViewById(R.id.logout);
         textView = findViewById(R.id.user_details);
         user = auth.getCurrentUser();
+        beginner = findViewById(R.id.beginner);
+        intermediate = findViewById(R.id.intermediate);
+        courses = findViewById(R.id.courses);
 
         if (user==null){
             Intent intent = new Intent(getApplicationContext(), Login.class);
@@ -52,6 +60,34 @@ FirebaseUser user;
 
             }
         });
+
+        beginner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), beginner.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        intermediate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), intermediate.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), category.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }
 

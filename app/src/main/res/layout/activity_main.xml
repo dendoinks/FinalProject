@@ -80,6 +80,8 @@ android:paddingTop="10dp">
         android:textSize="26dp" />
 
     <LinearLayout
+        android:clickable="true"
+        android:id="@+id/courses"
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:background="@drawable/card_buttton_bg"
@@ -140,8 +142,10 @@ android:paddingTop="10dp">
 
 
         <RelativeLayout
+            android:id="@+id/beginner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clickable="true"
             android:gravity="center_vertical"
             android:paddingLeft="25dp">
 
@@ -219,6 +223,8 @@ android:paddingTop="10dp">
 
 
         <RelativeLayout
+            android:id="@+id/intermediate"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
