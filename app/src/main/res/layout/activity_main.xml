@@ -10,6 +10,7 @@ android:background="@drawable/home_bg"
 android:paddingLeft="10dp"
 android:paddingTop="10dp">
 
+    <!-- YUNG ILALAGAY NASA DC -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
