@@ -1,30 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".history">
 
+
+    <ImageView
+        android:layout_width="430dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/javaa"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="186dp"
-        android:text="HISTORY"
-        android:textSize="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginStart="25sp"
+
+        android:layout_marginTop="190dp"
+        android:text="\n\t\nJava was created at Sun Microsystems in the early 1990s to address the need for a platform-independent programming language for embedded systems. The release of Java 1.0 in 1996 introduced the revolutionary concept of ”Write Once, Run Anywhere” (WORA), allowing Java programs to run on any device with a Java Virtual Machine (JVM).\n\n
+
+    During the late 1990s and early 2000s, Java became a dominant language for dynamic web applications. Java 2, released in 1998, brought significant improvements, including the Swing GUI toolkit and the Collections Framework, enhancing Java's capabilities.\n\n
+
+    In 2006, Sun Microsystems open-sourced Java, encouraging community collaboration. Oracle Corporation's acquisition of Sun Microsystems in 2010 initially raised concerns, but Java continued to evolve with regular updates.\n\n
+
+    In the 2020s, Java remains a cornerstone in the programming landscape, supporting enterprise applications, Android development, and large-scale systems. The active Java community ensures the language's relevance in the ever-changing technological landscape. The history of Java reflects a journey marked by innovation, adaptability, and a vibrant developer community."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginVertical="170dp"
+        android:text="\t    Java History"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="209dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="100dp"
         android:clickable="true"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

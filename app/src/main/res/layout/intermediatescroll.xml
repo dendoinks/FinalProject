@@ -11,21 +11,47 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
         <!-- DITO ILALAGAY YUNG CONTENT NG BEGINNER SHIT -->
         <!-- PALITAN NIYO NALANG YANG NASA BABA -->
         <!-- YUNG ILALAGAY NASA DC -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java Method Parameters"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="\n\tInformation can be passed to methods as parameter. Parameters act as variables inside the method.\n\n
+
+Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.\n\n
+
+The following example has a method that takes a String called fname as parameter. When the method is called, we pass along a first name, which is used inside the method to print the full name:\n"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
         <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:src="@drawable/alham"
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\n\n\nMultiple Parameters"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
@@ -34,22 +60,62 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:text="\n\tYou can have as many parameters as you like:\n}n"
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_gravity="center"/>
 
         <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:src="@drawable/alham3"
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\n\n\nReturn Values"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:text="\n\tThe void keyword, used in the examples above, indicates that the method should not return a value.\n\n If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method:\n}n"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:src="@drawable/alham4"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Example 2"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:src="@drawable/alham5"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n\n\nA Method with If...Else"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
@@ -58,155 +124,211 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:text="It is common to use if...else statements inside methods:"
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_gravity="center"/>
 
         <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:src="@drawable/alham6"
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\n\n\nJAVA METHODS  OVERLOADING"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
             android:layout_gravity="center"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text="\n\tDescription of the topic: With method overloading, multiple methods can have the same name with different parameters\n\n
 
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
-            android:layout_gravity="center"/>
+EXAMPLE:\n\n
+
+int myMethod(int x)\n\n
+float myMethod(float x)\n\n
+double myMethod(double x, double y)\n\n
+
+
+EXAMPLE:\n\n
+
+Consider the following example, which has two methods that add numbers of different type:\n\n
+
+static int plusMethodInt(int x, int y) {
+  return x + y;
+}\n\n
+
+static double plusMethodDouble(double x, double y) {
+  return x + y;
+}\n\n
+
+public static void main(String[] args) {
+  int myNum1 = plusMethodInt(8, 5);
+  double myNum2 = plusMethodDouble(4.3, 6.26);
+  System.out.println(”int: ” + myNum1);
+  System.out.println(”double: ” + myNum2);
+}\n\n
+
+EXAMPLE:\n\n
+
+Instead of defining two methods that should do the same thing, it is better to overload one.\n\n
+
+In the example below, we overload the plusMethod method to work for both int and double:\n\n
+
+static int plusMethod(int x, int y) {
+  return x + y;
+}\n\n
+
+static double plusMethod(double x, double y) {
+  return x + y;
+}\n\n
+
+public static void main(String[] args) {
+  int myNum1 = plusMethod(8, 5);
+  double myNum2 = plusMethod(4.3, 6.26);
+  System.out.println(”int: ” + myNum1);
+  System.out.println(”double: ” + myNum2);
+} \n}\n
+"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\n\n\n               Exercise\nRecursive String Reversal"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
             android:layout_gravity="center"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="367dp"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text="Objective:
+Write a Java program that uses recursion to reverse a given string.
 
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
-            android:layout_gravity="center"/>
+Requirements: \n"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\t  Method Implementation"
+            android:textSize="18sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="left"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="377dp"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="Create a class named StringReversal.\nImplement a recursive method called reverseString that takes a string as a parameter and returns the reversed string.\nThe method should not use loops, only recursion.\n"
             android:textColor="@color/black"
-            android:layout_gravity="center"/>
-
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
-            android:layout_gravity="center"/>
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\t User Interaction:"
+            android:textSize="18sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="left"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="377dp"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="In the main method, prompt the user to enter a string.
+Call the reverseString method with the user-inputted string and display the reversed string.\n"
             android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:textSize="16sp" />
 
         <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/alham7"
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\t  \n   Bonus"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="left"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="377dp"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="Add error handling to handle null or empty string input.\n\nModify the program to ignore spaces during the reversal.
+"
             android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:textSize="16sp" />
 
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/adobe_xd"
-            android:layout_gravity="center"/>
-        <!-- DITO ILALAGAY YUNG CONTENT NG BEGINNER SHIT -->
-        <!-- PALITAN NIYO NALANG YANG NASA BABA -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adobe XD"
-            android:textSize="45dp"
+            android:text="\t  \n   Tips:"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:layout_gravity="center"/>
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The recursive method should work by reversing the substring excluding the first character and then appending the first character to the reversed substring.\n\nUse proper base cases to terminate the recursion.\n\nTest your program with various input strings.
+"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Essentials"
-            android:textSize="30dp"
+            android:text="\t  \n   Submission Guidelines:"
+            android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The student should submit a Java file containing the StringReversal class with the reverseString method and the main method for user interaction.\n\nInclude comments in the code to explain the logic and any notable implementation details.\n\n
+Encourage the student to test their program with different input strings.\n\nThis exercise is designed to reinforce the concept of recursion and string manipulation in Java. Students can explore different ways to approach the problem and improve their understanding of recursive algorithms.\n\n\n\n\n"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+
+
 
     </LinearLayout>
 
